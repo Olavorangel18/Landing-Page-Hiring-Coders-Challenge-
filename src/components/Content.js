@@ -3,6 +3,7 @@ import menina from './assets/menina.svg'
 import facebook from './assets/facebookBranco.svg'
 import instagram from './assets/instagramBranco.svg'
 import twitter from './assets/twiterBranco.svg'
+
 export default function Content(props){
     
     const [email,setEmail] = useState("");
@@ -13,7 +14,7 @@ export default function Content(props){
     if(!listEmail.includes(email))
         listEmail.push(email)
         localStorage.setItem('listEmail',JSON.stringify(listEmail));
-
+    setEmail("")
 }
     return (
         <>
