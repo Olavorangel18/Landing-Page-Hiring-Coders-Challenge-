@@ -1,14 +1,19 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import menina from './assets/menina.svg'
 import facebook from './assets/facebookBranco.svg'
 import instagram from './assets/instagramBranco.svg'
 import twitter from './assets/twiterBranco.svg'
 
 export default function Content(props){
+
     
     const [email,setEmail] = useState("");
     const [listEmail, setlistEmail] = useState([])
-
+    useEffect(() =>{
+        let dados = localStorage.getItem('listEmail');
+        dados = JSON.parse(dados);
+        setlistEmail(dados);
+    },[])
     function handleSubmitEmail(event){
     event.preventDefault();
     if(!listEmail.includes(email))
