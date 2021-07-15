@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Content from "./components/Content";
+import Header from "./components/Header";
+import './style.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header name="Eccomerce System" follow="Follow us"></Header>
+      <Content event="Black Friday!" copy="COMPRE EM SUA CASA" description={`Se inscreva para ficar por dentro de nossos produtos\n\ne ofertas imperdiveis`}></Content>
     </div>
   );
 }

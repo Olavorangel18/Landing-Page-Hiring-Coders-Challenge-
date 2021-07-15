@@ -1,0 +1,288 @@
+.App{
+    font-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(225.34deg, #000000 0%, #DD1313 101.17%);
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 10em;
+    background-color: #F9F9F9;
+    justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logoIcon{
+    width: 6em;
+    height: 6em;
+    margin-right: 2em;
+}
+
+h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 3em;
+    letter-spacing: 0.02em;
+}
+
+.socialMedia{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 3em;
+    height: 3em;
+    padding-left: 2em;
+}
+
+.space{
+    padding-top: 1em;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    flex-direction:column;
+    width: 50em;
+    height: auto;
+    align-self: center;
+    margin-right: 3em;
+}
+footer{
+    display: flex;
+    width: 100vw;
+    height: 50%;
+    background-color: #000000;
+    flex-direction: column;
+}
+p{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+.illustration{
+    position: relative;
+    width: 50em;
+    height: 50em;
+    top: 15em;
+    padding-right: 2em;
+}
+
+.textFriday{
+    color:#FFE651;
+    font-weight:500;
+    font-size: 2em;
+}
+
+h1{
+    color: #f9f9f9;
+    font-size: 5em;
+}
+
+.description{
+    color: #F9F9F9;
+    font-size: 1.2em;
+    
+}
+
+input{
+    width: 20em;
+    height: 4em;
+    border-radius: 15px;
+    padding-left: 2em;
+    margin-top: 2em;
+    border:none;
+    margin-right: 1.5em;
+}
+
+button{
+    height: 4.5em;
+    width: 10em;
+    border-radius: 15px;
+    border:none;
+    background-color: #BF1010;
+    align-self: flex-end;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+.submit{
+    color: #F9F9F9;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+form{
+    flex-shrink: 1;
+    display: flex;
+}
+@media (max-width: 1348px){
+    .App{
+        font-size: 70%;
+    }
+
+    .description{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:1000px){
+    .App{
+        font-size: 50%;
+        
+    }
+    .description{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+}
+.socialMedia1{
+    display: none;
+}
+
+@media (max-width:1000px){
+    .App{
+        font-size: 50%;
+        
+    }
+    .description{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:800px){
+    
+    section{
+        display: block;
+        margin-top: 10em;
+        margin-bottom: 30em;
+        flex-direction: column;
+        height: 80vh;
+        padding: 0;
+        padding-bottom: 8em;
+        box-sizing: border-box;
+    }
+    footer{
+        height: 50%;
+        justify-content: center;
+    }
+    .description{
+        font-size: 2em;
+    }
+
+    .illustration{
+        position:static;
+        padding:0;
+        align-self: center;
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+
+    }
+
+    .content{
+        padding-top: 5rem;
+        display: block;
+        margin: 0;
+        padding-bottom: 10em;
+        margin: 0 auto;
+    }
+    
+    .socialMedia1{     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6em;
+      }
+  
+      .social{
+          display: flex;
+      }
+  
+      .textSocial{
+          color:#f9f9f9;
+          font-size: 2.5em;
+      }
+      .icon{
+          width: 5em;
+          height: 5em;
+          padding-right: 2em;
+          margin-bottom: 2em;
+          padding-left: 0;
+      }
+  
+      .space2{
+          padding-left: 1em;
+      }
+
+      .socialMedia{
+        display: none;
+    }
+}
+@media (max-width:700px){
+    .App{
+        font-size: 40%;
+    }
+}
+@media (max-width:480px){
+    .App{
+        font-size: 40%;
+    }
+
+}
+
+
+@media (max-width:320px){
+    .App{
+        font-size: 30%;
+    }
+    form{
+        flex-direction: column;
+    }
+    input{
+        width: 16em;
+    }
+
+    button{
+        width: 17.5em;
+    }
+    section{
+        margin-bottom: 50em;
+    }
+}
+
+@media (max-height:450px){
+    section{
+        margin-bottom: 50em;
+    }
+
+    footer{
+        height: 30em;
+    }
+
+}
+
+
+
+
+
