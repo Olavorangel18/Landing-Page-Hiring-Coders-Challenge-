@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Deploy do projeto -> https://silly-sinoussi-516f28.netlify.app/
+Deploy do projeto -> https://hiringcoders-blackfriday.herokuapp.com/
 
 ## Available Scripts
 
